@@ -1,0 +1,36 @@
+/* ---------- Grundlayout ---------- */
+body            { font-family:'Inter', Arial, sans-serif; background:#f5f5f5;
+                  padding:20px; margin:0; }
+h1, h2          { text-align:center; }
+
+/* ---------- Übersicht ---------- */
+#cost-overview  { margin:20px auto; width:1000px; background:#fafafa;
+                  border:1px solid #ddd; border-radius:8px; padding:12px 16px;
+                  font-size:14px; }
+#cost-overview h2      { margin:0 0 8px 0; font-size:16px; font-weight:600; }
+#cost-overview ul      { list-style:none; padding:0; margin:0; }
+#cost-overview li      { margin:4px 0; }
+#cost-overview .explain{ margin-top:10px; font-size:13px; color:#555; }
+
+/* ---------- Diagramm-Container ---------- */
+#cost-chart     { margin:0 auto; width:1200px; padding:20px 20px 60px;
+                  background:#ffffff; border-radius:12px;
+                  box-shadow:0 4px 6px rgba(0,0,0,0.08); }
+
+/* ---------- Tooltip ---------- */
+.tooltip        { position:absolute; pointer-events:none;
+                  background:rgba(0,0,0,0.8); color:#fff; padding:6px 8px;
+                  border-radius:4px; font-size:12px; opacity:0;
+                  transition:opacity .1s ease-in-out; line-height:1.4;
+                  max-width:200px; }
+
+/* ---------- Säulen-Beschriftung ---------- */
+.bar-label      { fill:#ffffff; font-size:11px; font-weight:600;
+                  text-anchor:middle; }
+
+/* ---------- Quellenhinweis ---------- */
+.source-note    { text-align:right; font-size:12px; margin-top:10px; }
+
+/* Kalenderwochen-Achse (nur Text, keine Linie) */
+.kw-axis path,
+.kw-axis line { display: none; }   /* Linie/Ticks ausblenden */

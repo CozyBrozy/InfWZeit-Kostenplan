@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Kostenplan – Einführung Schulungskonzept</title>
+
+  <!-- Web-Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="cost.css">
+</head>
+<body>
+  <h1>
+    Kostenplan - Einführung des Schulungskonzepts
+    <small style="font-size:0.6em; margin-left:12px;">
+      <a href="../" style="text-decoration:none; color:#3498db;">← Zeitplan</a>
+    </small>
+  </h1>
+
+  <!-- ---------------- Übersicht ---------------- -->
+  <div id="cost-overview">
+    <h2>Überblick</h2>
+    <ul>
+      <li><strong>Gesamtkosten Einführung:</strong> ≈ 41 Tsd.&nbsp;€</li>
+      <li><strong>Ø Planungsrate:</strong> 500 €/Personentag &nbsp;|&nbsp;
+          <strong>Summe Personentage:</strong> 82</li>
+      <li><strong>Team-Mix:</strong> 52 PT intern · 30 PT extern</li>
+      <li><strong>Betrieb &amp; Lizenzen danach:</strong> ~ 600 €/Monat </li>
+    </ul>
+
+    <ul class="explain">
+      <li>Histogramm zeigt <strong>nur tatsächliche Zahlungsströme</strong>, keine Opportunitäts­kosten.</li>
+      <li>Pauschale für Medienproduktion bereits in <strong>KW 26 - 31</strong> verbucht.</li>
+      <li><strong>Leitfäden &amp; Revision</strong> durch internes Team, daher kein zusätzlicher Zahlungsstrom (KW 32 – 34).</li>
+    </ul>
+  </div>
+
+  <!-- ---------------- Histogramm ---------------- -->
+  <div id="cost-chart"></div>
+  <div id="tooltip" class="tooltip"></div>
+
+  <p class="source-note">
+    *Kostenblöcke entsprechen den ADDIE-Phasen bis zum Go-Live
+    (Betriebs-/Lizenzkosten separat ausgewiesen).
+  </p>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.4/d3.min.js"></script>
+  <script src="cost.js"></script>
+</body>
+</html>
