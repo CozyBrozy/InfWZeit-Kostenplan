@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Gantt-Diagramm – Einführung des Schulungskonzepts</title>
+
+  <!-- Cache-Verhalten: nie lokal cachen -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma"       content="no-cache">
+  <meta http-equiv="Expires"      content="0">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Einführung des Schulungskonzepts</h1>
+    <div id="overview">
+    <h2>Übersicht</h2>
+    <ul>
+      <li><strong>Anzahl Schritte:</strong> 23</li>
+      <li><strong>Zeitraum:</strong> 28.05.2025 – 07.10.2025 (133 Kalendertage)</li>
+      <li><strong>Arbeitstage:</strong> 95 Tage</li>
+      <li><strong>Phasen:</strong> 5 (Analyse, Design, Entwickeln, Implementierung, Evaluation)</li>
+    </ul>
+  </div>
+  <div id="gantt"></div>
+  <div class="tooltip"></div>
+
+  <!-- Quelle unter dem Diagramm -->
+  <p style="text-align:right; font-size:12px; margin-top:10px;">
+    Quelle: <em>Instructional Design – The ADDIE Approach</em>
+  </p>
+
+  <!-- D3 laden -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.4/d3.min.js"></script>
+  <!-- Gantt-Skript -->
+  <script src="gantt.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#gantt {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 20px 20px 60px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  height: auto;
+  overflow: visible;
+}
+
+.gantt-svg {
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+/* horizontale Zeilen-Raster */
+.row-grid line {
+  stroke: #e0e0e0;
+  stroke-dasharray: 4,4;
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+  line-height: 1.4;
+  max-width: 200px;
+}
+
+/* Legendentext */
+.legend text {
+  font-size: 12px;
+  alignment-baseline: hanging;
+}
+
+/* ----- Einführungsübersicht ----- */
+#overview {
+  margin: 20px auto;
+  width: 1000px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+#overview h2 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+#overview ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0 0 0;
+}
+#overview li {
+  margin: 4px 0;
+}
+#overview strong {
+  color: #333;
+}
