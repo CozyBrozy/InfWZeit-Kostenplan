@@ -1,3 +1,6 @@
+<!-- =====================================================
+     cost.html – Kostenplan "Einführung des Schulungskonzepts"
+     ===================================================== -->
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -13,37 +16,82 @@
 </head>
 <body>
   <h1>
-    Kostenplan - Einführung des Schulungskonzepts
+    Kostenplan – Einführung des Schulungskonzepts
     <small style="font-size:0.6em; margin-left:12px;">
       <a href="../" style="text-decoration:none; color:#3498db;">← Zeitplan</a>
     </small>
   </h1>
 
-  <!-- ---------------- Übersicht ---------------- -->
-  <div id="cost-overview">
-    <h2>Überblick</h2>
-    <ul>
-      <li><strong>Gesamtkosten Einführung:</strong> ≈ 41 Tsd.&nbsp;€</li>
-      <li><strong>Ø Planungsrate:</strong> 500 €/Personentag &nbsp;|&nbsp;
-          <strong>Summe Personentage:</strong> 82</li>
-      <li><strong>Team-Mix:</strong> 52 PT intern · 30 PT extern</li>
-      <li><strong>Betrieb &amp; Lizenzen danach:</strong> ~ 600 €/Monat </li>
-    </ul>
+  <!-- cost.html – nur der Überblicksteil -->
+<div id="cost-overview">
+  <h2>Überblick der Projektkosten</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Kostenblock</th>
+        <th>Annahmen</th>
+        <th>Betrag</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Internes Kernteam</td>
+        <td>2 Mitarbeitende • 60 Personentage • 400 €/Personentag</td>
+        <td>24 000 €</td>
+      </tr>
+      <tr>
+        <td>Externe Spezialistinnen &amp; Spezialisten</td>
+        <td>5 Mitarbeitende • 100 Personentage • 600 €/Personentag</td>
+        <td>60 000 €</td>
+      </tr>
+      <tr>
+        <td>Medien-Produktion</td>
+        <td>Videos, E-Learning</td>
+        <td>2 500 €</td>
+      </tr>
+      <tr>
+        <td>Test-Lizenzen</td>
+        <td>160 € monatlich × 3 Monate</td>
+        <td>480 €</td>
+      </tr>
+      <tr>
+        <td>Unternehmens-Lizenz</td>
+        <td>500 € monatlich × 2 Monate</td>
+        <td>1 000 €</td>
+      </tr>
+      <tr>
+        <td>Sachmittel &amp; Geräte</td>
+        <td>Arbeitsmaterial</td>
+        <td>4 000 €</td>
+      </tr>
+      <tr class="separator"><td colspan="3"></td></tr>
+      <tr>
+        <td><strong>Zwischensumme</strong></td>
+        <td></td>
+        <td><strong>91 980 €</strong></td>
+      </tr>
+      <tr>
+        <td>Reserve (5 %)</td>
+        <td></td>
+        <td>4 599 €</td>
+      </tr>
+      <tr class="separator"><td colspan="3"></td></tr>
+      <tr>
+        <td><strong>Gesamtprojektkosten</strong></td>
+        <td></td>
+        <td><strong>96 579 €</strong></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-    <ul class="explain">
-      <li>Histogramm zeigt <strong>nur tatsächliche Zahlungsströme</strong>, keine Opportunitäts­kosten.</li>
-      <li>Pauschale für Medienproduktion bereits in <strong>KW 26 - 31</strong> verbucht.</li>
-      <li><strong>Leitfäden &amp; Revision</strong> durch internes Team, daher kein zusätzlicher Zahlungsstrom (KW 32 – 34).</li>
-    </ul>
-  </div>
 
   <!-- ---------------- Histogramm ---------------- -->
   <div id="cost-chart"></div>
   <div id="tooltip" class="tooltip"></div>
 
   <p class="source-note">
-    *Kostenblöcke entsprechen den ADDIE-Phasen bis zum Go-Live
-    (Betriebs-/Lizenzkosten separat ausgewiesen).
+    *Kostenblöcke basieren auf: Motzel (2021) »Lehrbuch Level D & Basiszertifikat«, Reichert (2024) »Projektmanagement«, ZEP (o.J.) »Kostenplanung«.
   </p>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.4/d3.min.js"></script>
